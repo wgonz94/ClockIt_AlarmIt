@@ -1,0 +1,32 @@
+body{
+    background-color: #ed553d;
+    display: flex;
+    align-content:  center;
+    justify-content: center;
+    font-family: 'Sriracha', cursive;
+}
+
+h2, h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 200;
+}
+
+img.clock{
+    border-radius: 50%;
+    border: solid black;
+}
+
+div.alarm{
+    text-align: center;
+}
+
+button{
+    width: 300px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: white;
+    border: solid black;
+    border-radius: 12px;
+    font-family: 'Sriracha', cursive;
+}
