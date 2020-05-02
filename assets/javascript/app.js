@@ -77,7 +77,7 @@ let updateClock = () => {
 
     } else if (time >= evening) {
 
-        image = "https://media.giphy.com/media/KcbXFenYh6CEGPl1yQ/giphy.gif";
+        image = "https://media.giphy.com/media/rXHKRU96pSJNe/giphy.gif";
         messageText = "Good Evening!";
 
     } else {
