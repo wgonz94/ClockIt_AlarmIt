@@ -11,12 +11,13 @@
 <div class="container">
 <div class="title">
     <h2>Clock it!</h2>
-    <h3>Current: <span id="current-time"></span></h3>
+    <h3>Current <span id="current-time"></span></h3>
 </div>
 <div class="card">
-<img class="clock" src="https://media.giphy.com/media/tn8zWeNYA73G0/giphy.gif" alt="clock-gif">
+<img id="clock" src="https://media.giphy.com/media/tn8zWeNYA73G0/giphy.gif" alt="clock-gif">
 </div>
 <div class="alarm">
+    <blockquote id="timeEvent">This is where time events are reported</blockquote>
     set Wake Up Time
     <select id="wakeUpTimeSelector">
       <option value="1">1 AM - 2AM</option>

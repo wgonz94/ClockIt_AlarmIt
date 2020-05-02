@@ -12,7 +12,7 @@ h2, h3{
     font-weight: 200;
 }
 
-img.clock{
+img#clock{
     border-radius: 50%;
     border: solid black;
 }
