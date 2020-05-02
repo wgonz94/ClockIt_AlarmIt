@@ -8,13 +8,18 @@ body{
 
 h2, h3{
     text-align: center;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 200;
+    margin: 0;
 }
 
 img#clock{
     border-radius: 50%;
     border: solid black;
+}
+
+blockquote{
+    font-size: 25px;
 }
 
 div.alarm{
