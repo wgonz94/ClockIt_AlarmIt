@@ -5,6 +5,7 @@ let noon = 12;
 let lunchtime = 12;
 let naptime = lunchtime + 2;
 let evening = 18;
+let snoozeit;
 
 let showCurrentTime = () => {
     let clock = document.getElementById('current-time');
@@ -92,4 +93,65 @@ let updateClock = () => {
 };
 updateClock();
 
+// increment once a second for clock
+let oneSecond = 1000;
+setInterval( updateClock, oneSecond );
 
+
+// get Alarm button to work
+let alarmButton = document.getElementById("timeButton");
+
+let alarmEvent = () => {
+    
+    if( snoozeit < 0 ) {
+
+        snoozeit = new Date().getHours();
+        alarmButton.innerText = "Snoozed";
+        alarmButton.style.backgroundColor = "#F1A104";
+
+    } else {
+
+        snoozeit = -1;
+        alarmButton.innerText = "Snooze me";
+        alarmButton.style.backgroundColor = "#bc4749"
+
+    }
+};
+
+alarmButton.addEventListener("click", alarmEvent);
+alarmEvent();
+
+// Activate Wake-up Selector
+let wakeUpSelector = document.getElementById("wakeUpTimeSelector");
+
+let wakeUpEvent = () => {
+
+    wakeuptime = wakeUpSelector.value;
+
+};
+
+wakeUpTimeSelector.addEventListener("change", wakeUpEvent);
+
+
+// Activate Lunch Selector
+let lunchTimeSelector = document.getElementById("lunchTimeSelector");
+
+let lunchEvent = () => {
+
+    lunchtime = lunchTimeSelector.value;
+
+};
+
+lunchTimeSelector.addEventListener("change", lunchEvent);
+
+
+// Activates Nap-Time selector
+let napTimeSelector = document.getElementById("napTimeSelector");
+
+let napEvent = () => {
+
+    naptime = napTimeSelector.value;
+
+};
+
+napTimeSelector.addEventListener("change", napEvent);
